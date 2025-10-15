@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running typecheck, lint and tests before push..."
+npm run typecheck || exit 1
+npm run lint || exit 1
+npm run test || exit 1
