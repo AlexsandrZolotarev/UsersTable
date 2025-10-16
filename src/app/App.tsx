@@ -3,15 +3,28 @@ import Toolbar from './components/Toolbar/Toolbar';
 import './styles/main.scss';
 function App() {
   return (
-    <main className="body">
-      <header className="header">
+    <main>
+      <header className="header container">
         <Breadcrumbs />
-        <Toolbar />
       </header>
-      <h1 className="body__title">Пользователи</h1>
-      {/* <Table />
-      <Pagination />
-      <Footer /> */}
+      <section aria-labelledby="users" className="users">
+        <div className="users__main">
+          <div className="users__body">
+            <div className="users__header container">
+              <h1 className="users__title" id="users">
+                Пользователи
+              </h1>
+              <Toolbar />
+            </div>
+            <div className="hero__body-inner">
+              {/* <Table />
+              <Pagination /> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <Footer/> */}
     </main>
   );
 }

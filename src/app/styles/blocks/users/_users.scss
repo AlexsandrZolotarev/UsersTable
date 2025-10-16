@@ -1,0 +1,16 @@
+@use '../../helpers' as *;
+
+.users {
+  &__main {
+  }
+
+  &__body {
+  }
+
+  &__header {
+  }
+
+  &__title {
+    padding-block: rem(6) rem(24);
+  }
+}

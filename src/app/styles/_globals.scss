@@ -22,6 +22,7 @@ h1,
 .h1 {
   @include fluid-text(32, 24);
   line-height: 1.5;
+  font-weight: 600;
 }
 
 a,
@@ -35,11 +36,11 @@ svg * {
 }
 
 a {
-  color: var(--color-light);
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: rem(14);
+  line-height: 1.43;
+  font-weight: 400;
+  color: var(--color-link);
   @include fluid-text(16, 16);
-  opacity: 0.4;
   &[class] {
     text-decoration: none;
   }

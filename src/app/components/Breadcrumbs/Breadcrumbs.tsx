@@ -8,7 +8,7 @@ function Breadcrumbs() {
               Данные
             </a>
           </li>
-          <li aria-current="page" className="header__item-link">
+          <li aria-current="page" className="header__item-link header__item_active">
             Пользователи
           </li>
         </ol>

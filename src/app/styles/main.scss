@@ -3,3 +3,7 @@
 @use 'variables';
 @use 'utils';
 @use 'globals';
+
+@use './blocks/header/header';
+
+@use './blocks/users/users';

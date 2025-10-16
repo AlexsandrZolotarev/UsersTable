@@ -1,0 +1,25 @@
+@use '../../helpers' as *;
+
+.header {
+  padding-top: rem(32);
+  &__breadcrumb {
+  }
+  &__title {
+    padding-block: rem(6) rem(24);
+    font-weight: 600;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    &_active {
+      color: var(--color-link-active);
+    }
+  }
+  &__item:not(:last-child)::after {
+    content: '/';
+    margin: 0 rem(8);
+    color: var(--color-link-active);
+  }
+}
