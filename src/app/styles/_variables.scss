@@ -1,0 +1,15 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: white;
+  --color-white: #fafcff;
+  --color-red: #ff4d00;
+  --color-dark: #050506;
+  --color-gray: #5f6166;
+  --color-gray2: #c0c4cc;
+  --color-gray3: #909399;
+  --font-family-base: 'Montserrat', 'sans-serif';
+  --container-width: #{rem(1544)};
+  --container-padding-x: #{rem(16)};
+  --transition-duration: 0.2s;
+}

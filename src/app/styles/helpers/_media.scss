@@ -1,0 +1,25 @@
+@use './functions' as *;
+
+$Decktop: 1544.98;
+
+@mixin Decktop {
+  @media (width <= rem($mobile)) {
+    @content;
+  }
+}
+
+@mixin hover($hasActiveEffectOnMobile: true) {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @if ($hasActiveEffectOnMobile) {
+    @media (any-hover: none) {
+      &:active {
+        @content;
+      }
+    }
+  }
+}
