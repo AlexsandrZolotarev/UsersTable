@@ -376,4 +376,24 @@ a[class] {
   color: white;
 }
 
+.footer {
+  margin-top: 2rem;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
+}
+.footer__item a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.4);
+}
+
 /*# sourceMappingURL=main.css.map */
