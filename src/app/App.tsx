@@ -3,7 +3,7 @@ import Footer from './components/Footer/Footer';
 import Pagination from './components/Pagination/Pagination';
 import Table from './components/Table/Table';
 import Toolbar from './components/Toolbar/Toolbar';
-import './styles/main.scss';
+import './styles/main.css';
 function App() {
   return (
     <>

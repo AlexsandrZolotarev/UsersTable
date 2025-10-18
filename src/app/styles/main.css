@@ -254,6 +254,11 @@ html {
 html.is-lock {
   overflow: hidden;
 }
+html {
+  cursor:
+    url(../../app/icons/Cursors/default.svg) 2 2,
+    default;
+}
 
 body {
   display: flex;
@@ -282,6 +287,9 @@ textarea,
 select,
 svg * {
   transition-duration: var(--transition-duration);
+  cursor:
+    url(../../app/icons/Cursors/CursorHover.svg) 2 2,
+    default;
 }
 
 a {
@@ -440,6 +448,7 @@ a[class] {
 .table__item-cell {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   min-width: 0;
   overflow: hidden;
@@ -477,6 +486,8 @@ a[class] {
 
 .dropdown {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .dropdown__button {
   width: 100%;
@@ -486,7 +497,6 @@ a[class] {
   background: var(--color-background);
   color: var(--color-text-light);
   border: none;
-  cursor: pointer;
   border: 1px solid #c0c4cc;
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
@@ -503,7 +513,7 @@ a[class] {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 10%;
   margin-top: 0.5rem;
   list-style: none;
   padding: 0.5rem;
@@ -522,7 +532,6 @@ a[class] {
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
 }
 .dropdown__menu li img {
   fill: red;
