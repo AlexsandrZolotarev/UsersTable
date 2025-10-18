@@ -1,0 +1,57 @@
+@use '../../helpers' as *;
+
+.pager {
+  display: grid;
+  row-gap: rem(12);
+  color: var(--pager-text);
+  margin-top: rem(32);
+
+  &__list {
+    display: flex;
+    gap: rem(16);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: contents;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(8);
+    padding: rem(12);
+    width: rem(48);
+    height: rem(48);
+    min-width: rem(48);
+    max-width: rem(64);
+    background: var(--color-background);
+    border: 0;
+    color: var(--color-gray2);
+    cursor: pointer;
+
+    &[aria-current='page'] {
+      background: var(--color-red);
+      color: var(--color-light);
+    }
+    &--pages {
+      width: rem(100);
+    }
+    &--ellipsis {
+      cursor: default;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #787a80;
+    }
+  }
+
+  &__footer {
+    margin-top: rem(16);
+    font-weight: 400;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

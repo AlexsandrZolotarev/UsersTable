@@ -296,7 +296,7 @@ a[class] {
 }
 
 :focus-visible {
-  outline: 0.125rem dashed var(--color-light);
+  outline: 0.125rem solid var(--color-light);
   outline-offset: 0.25rem;
   transition-duration: 0s !important;
 }
@@ -394,6 +394,56 @@ a[class] {
   font-weight: 500;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.4);
+}
+.pager {
+  display: grid;
+  row-gap: 0.75rem;
+  color: var(--pager-text);
+  margin-top: 2rem;
+}
+.pager__list {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pager__item {
+  display: contents;
+}
+.pager__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  max-width: 4rem;
+  background: var(--color-background);
+  border: 0;
+  color: var(--color-gray2);
+  cursor: pointer;
+}
+.pager__btn[aria-current='page'] {
+  background: var(--color-red);
+  color: var(--color-light);
+}
+.pager__btn--pages {
+  width: 6.25rem;
+}
+.pager__btn--ellipsis {
+  cursor: default;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #787a80;
+}
+.pager__footer {
+  margin-top: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=main.css.map */

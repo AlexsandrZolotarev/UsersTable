@@ -1,5 +1,6 @@
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 import Footer from './components/Footer/Footer';
+import Pagination from './components/Pagination/Pagination';
 import Toolbar from './components/Toolbar/Toolbar';
 import './styles/main.scss';
 function App() {
@@ -19,7 +20,6 @@ function App() {
                 <Toolbar />
               </div>
               <div className="hero__body-inner">
-                <Table />
                 <Pagination />
               </div>
             </div>

@@ -18,7 +18,6 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit",
     "sass-watch": "sass --watch ."
   },
   "dependencies": {
