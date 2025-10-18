@@ -1,7 +1,7 @@
 import React from 'react';
-import ArrowLeft from '../../icons/ArrowLeft.svg';
-import ArrowRight from '../../icons/ArrowRight.svg';
-export default function PaginationStatic() {
+import ArrowLeft from '../../icons/ArrowPaginationLeft.svg';
+import ArrowRight from '../../icons/ArrowPaginationRight.svg';
+export default function Pagination() {
   return (
     <nav className="pager container" aria-label="Пагинация">
       <ul className="pager__list">
@@ -12,7 +12,11 @@ export default function PaginationStatic() {
         </li>
 
         <li className="pager__item">
-          <button className="pager__btn" aria-label="Страница 1" aria-current="page">
+          <button
+            className="pager__btn pager__btn--active "
+            aria-label="Страница 1"
+            aria-current="page"
+          >
             1
           </button>
         </li>
@@ -54,8 +58,8 @@ export default function PaginationStatic() {
         </li>
 
         <li className="pager__item">
-          <button className="pager__btn " aria-label="Следующая">
-            <img src={ArrowRight} alt="" aria-hidden="true"></img>
+          <button className="pager__btn pager__btn--arrow" aria-label="Следующая">
+            <img src={ArrowRight} alt="" aria-hidden="true" />
           </button>
         </li>
       </ul>

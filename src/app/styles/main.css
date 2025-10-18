@@ -395,52 +395,188 @@ a[class] {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.4);
 }
+.footer__copyright {
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.table {
+  margin-top: 2rem;
+  margin-inline: 1rem;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  table-layout: auto;
+}
+.table__header {
+  margin-bottom: 0.5rem;
+}
+.table__row {
+  border-radius: 0.5rem;
+  height: 3.75rem;
+  background: #101112;
+}
+.table__row-options {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #18191a;
+  margin-left: 0.5rem;
+}
+.table tbody tr > th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.table tbody tr > td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.table__item-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  gap: 0.375rem;
+  padding: 1rem 0.5rem;
+}
+.table__item-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-weight: 600;
+  color: var(--color-link-active);
+}
+.table__item-info {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.table__cell {
+  text-align: center;
+}
+.table__body {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  color: #fafcff;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-background);
+  color: var(--color-text-light);
+  border: none;
+  cursor: pointer;
+  border: 1px solid #c0c4cc;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  width: 8.8125rem;
+  height: 2.625rem;
+  background: #101112;
+}
+.dropdown__icon {
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+}
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  list-style: none;
+  padding: 0.5rem;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+  background: #18191a;
+  border-radius: 8px;
+  border: 1px solid #303133;
+  width: 20rem;
+  height: 7.25rem;
+  min-width: 12.5rem;
+  max-width: 22.5rem;
+  z-index: 10;
+}
+.dropdown__menu li {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.dropdown__menu li img {
+  fill: red;
+}
+.dropdown__menu li[aria-selected='true'] {
+  background: #232426;
+  border-radius: 0.5rem;
+}
+.dropdown__menu li:not([aria-selected='true']) .dropdown__check {
+  filter: brightness(0.4);
+  opacity: 0.4;
+}
+
 .pager {
   display: grid;
-  row-gap: 0.75rem;
-  color: var(--pager-text);
+  justify-items: start;
+  row-gap: 1rem;
   margin-top: 2rem;
 }
 .pager__list {
   display: flex;
+  align-items: center;
   gap: 1rem;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .pager__item {
   display: contents;
 }
 .pager__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
   padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
   width: 3rem;
   height: 3rem;
   min-width: 3rem;
   max-width: 4rem;
   background: var(--color-background);
-  border: 0;
   color: var(--color-gray2);
-  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.pager__btn[aria-current='page'] {
+.pager__btn--active {
   background: var(--color-red);
   color: var(--color-light);
 }
 .pager__btn--pages {
   width: 6.25rem;
 }
-.pager__btn--ellipsis {
-  cursor: default;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #787a80;
-}
 .pager__footer {
-  margin-top: 1rem;
   font-weight: 400;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.5);

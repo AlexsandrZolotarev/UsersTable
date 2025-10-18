@@ -1,6 +1,7 @@
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 import Footer from './components/Footer/Footer';
 import Pagination from './components/Pagination/Pagination';
+import Table from './components/Table/Table';
 import Toolbar from './components/Toolbar/Toolbar';
 import './styles/main.scss';
 function App() {
@@ -19,8 +20,11 @@ function App() {
                 </h1>
                 <Toolbar />
               </div>
-              <div className="hero__body-inner">
-                <Pagination />
+              <div className="users__body-inner">
+                <div className="users__table">
+                  <Table />
+                  <Pagination />
+                </div>
               </div>
             </div>
           </div>
