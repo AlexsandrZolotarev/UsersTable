@@ -19,8 +19,8 @@ function App() {
                 <Toolbar />
               </div>
               <div className="hero__body-inner">
-                {/* <Table />
-              <Pagination /> */}
+                <Table />
+                <Pagination />
               </div>
             </div>
           </div>
