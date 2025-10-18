@@ -42,6 +42,22 @@ function Dropdown() {
           <img src={Check} alt="" aria-hidden="true" className="dropdown__check" />
           Back End разработчик
         </li>
+        <li role="option">
+          <img src={Check} alt="" aria-hidden="true" className="dropdown__check" />
+          Front End разработчик
+        </li>
+        <li role="option">
+          <img src={Check} alt="" aria-hidden="true" className="dropdown__check" />
+          Back End разработчик
+        </li>
+        <li role="option">
+          <img src={Check} alt="" aria-hidden="true" className="dropdown__check" />
+          Front End разработчик
+        </li>
+        <li role="option">
+          <img src={Check} alt="" aria-hidden="true" className="dropdown__check" />
+          Back End разработчик
+        </li>
       </ul>
     </div>
   );

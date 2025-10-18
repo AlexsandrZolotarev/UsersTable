@@ -28,6 +28,8 @@
   &__menu {
     display: none;
     position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
     top: 100%;
     left: 10%;
     margin-top: rem(8);
@@ -61,5 +63,15 @@
         }
       }
     }
+  }
+  &__menu::-webkit-scrollbar {
+    width: 4px;
+  }
+  &__menu::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &__menu::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #48494d;
   }
 }
