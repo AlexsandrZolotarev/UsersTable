@@ -4,6 +4,9 @@ html {
   &.is-lock {
     overflow: hidden;
   }
+  cursor:
+    url(../../app/icons/Cursors/default.svg) 2 2,
+    default;
 }
 
 body {
@@ -33,6 +36,9 @@ textarea,
 select,
 svg * {
   transition-duration: var(--transition-duration);
+  cursor:
+    url(../../app/icons/Cursors/CursorHover.svg) 2 2,
+    default;
 }
 
 a {

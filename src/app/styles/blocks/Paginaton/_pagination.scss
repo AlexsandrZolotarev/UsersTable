@@ -31,7 +31,6 @@
     background: var(--color-background);
     border: 0;
     color: var(--color-gray2);
-    cursor: pointer;
 
     &[aria-current='page'] {
       background: var(--color-red);
@@ -41,7 +40,6 @@
       width: rem(100);
     }
     &--ellipsis {
-      cursor: default;
       font-weight: 400;
       line-height: 1.5;
       color: #787a80;
