@@ -411,7 +411,6 @@ a[class] {
 
 .table {
   margin-top: 2rem;
-  margin-inline: 1rem;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
   table-layout: auto;

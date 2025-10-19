@@ -14,8 +14,8 @@ function UsersPage() {
             </h1>
             <Toolbar />
           </div>
-          <div className="users__body-inner">
-            <div className="users__table">
+          <div className="users__body-inner container">
+            <div className="users__table ">
               <Table />
               <Pagination />
             </div>

@@ -3,7 +3,7 @@ import ArrowLeft from '../../icons/ArrowPaginationLeft.svg';
 import ArrowRight from '../../icons/ArrowPaginationRight.svg';
 export default function Pagination() {
   return (
-    <nav className="pager container" aria-label="Пагинация">
+    <nav className="pager" aria-label="Пагинация">
       <ul className="pager__list">
         <li className="pager__item">
           <button className="pager__btn " aria-label="Предыдущая" disabled>
